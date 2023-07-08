@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    username: music_tracker
+    password: music_tracker
+    url: jdbc:mysql://localhost:3306/music_tracker
+
+  jpa:
+    hibernate:
+      ddl-auto: drop-and-create
+    show-sql: true
