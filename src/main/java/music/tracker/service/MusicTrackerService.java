@@ -207,9 +207,5 @@ public class MusicTrackerService {
 
     public void copySongFields(Song song, SongData songData) {
         song.setSongName(songData.getSongName());
-        song.setAlbum(songData.getAlbum());
-        song.setArtist(songData.getArtist());
-        song.setGenres(songData.getGenres());
     }
-
 }

@@ -17,17 +17,11 @@ import java.util.Set;
 public class SongData {
     private Long songId;
     private String songName;
-
-    private Album album;
-    private Artist artist;
-    private Set<Genre> genres;
+    
 
     public SongData(Song song) {
         songId = song.getSongId();
         songName = song.getSongName();
-        album = song.getAlbum();
-        artist = song.getArtist();
-        genres = song.getGenres();
     }
 }
 

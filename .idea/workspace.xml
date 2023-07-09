@@ -7,7 +7,8 @@
     <list default="true" id="4fe35baa-43d9-4ab3-b8c0-0312bfe52bc8" name="Changes" comment="git commit -m &quot;Early Commit&quot;">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/music/tracker/controller/MusicTrackerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/music/tracker/controller/MusicTrackerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/music/tracker/service/MusicTrackerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/music/tracker/service/MusicTrackerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/music/tracker/controller/model/SongData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/music/tracker/controller/model/SongData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/music/tracker/entity/Song.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/music/tracker/entity/Song.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

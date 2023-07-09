@@ -17,12 +17,10 @@ public class Song {
 
     //This is a many-to-one relationship linking the Song entity to the Album entity
     @ManyToOne
-    @JoinColumn(name="album_id")
     private Album album;
 
     //This is a many-to-one relationship linking the Song entity to the Artist entity
     @ManyToOne
-    @JoinColumn(name="artist_id")
     private Artist artist;
 
     //This is a many-to-many relationship linking the Song entity to the Genre entity through an intermediate table

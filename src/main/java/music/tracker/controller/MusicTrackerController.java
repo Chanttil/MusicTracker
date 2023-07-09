@@ -30,35 +30,35 @@ public class MusicTrackerController {
     }
 
     // Method for modifying an existing album
-    @PutMapping("/album/{albumId}")
-    public AlbumData modifyAlbum(@PathVariable Long albumId, @RequestBody AlbumData albumData) {
-        albumData.setAlbumId(albumId);
-        log.info("Updating album {}", albumData);
-//        MusicTrackerService musicTrackerService = new MusicTrackerService();
-        return musicTrackerService.saveAlbum(albumData);
-    }
-
-    // Method for getting an album by its ID
-    @GetMapping("/album/{albumId}")
-    public AlbumData getAlbumByAlbumId(@PathVariable Long albumId) {
-        log.info("Getting album with ID={}", albumId);
-//        MusicTrackerService musicTrackerService = new MusicTrackerService();
-        AlbumData albumData = musicTrackerService.getAlbumByAlbumId(albumId);
-        return albumData;
-    }
-
-    // Method for getting all albums
-    @GetMapping("/album")
-    public List<AlbumData> getAllAlbums() {
-        return musicTrackerService.getAllAlbums();
-    }
-
-    // Method for deleting an album by ID
-    @DeleteMapping("/album/{albumId}")
-    public void deleteAlbumById(@PathVariable Long albumId) {
-        log.info("Deleting album with ID={}", albumId);
-        musicTrackerService.deleteAlbumById(albumId);
-    }
+//    @PutMapping("/album/{albumId}")
+//    public AlbumData modifyAlbum(@PathVariable Long albumId, @RequestBody AlbumData albumData) {
+//        albumData.setAlbumId(albumId);
+//        log.info("Updating album {}", albumData);
+////        MusicTrackerService musicTrackerService = new MusicTrackerService();
+//        return musicTrackerService.saveAlbum(albumData);
+//    }
+//
+//    // Method for getting an album by its ID
+//    @GetMapping("/album/{albumId}")
+//    public AlbumData getAlbumByAlbumId(@PathVariable Long albumId) {
+//        log.info("Getting album with ID={}", albumId);
+////        MusicTrackerService musicTrackerService = new MusicTrackerService();
+//        AlbumData albumData = musicTrackerService.getAlbumByAlbumId(albumId);
+//        return albumData;
+//    }
+//
+//    // Method for getting all albums
+//    @GetMapping("/album")
+//    public List<AlbumData> getAllAlbums() {
+//        return musicTrackerService.getAllAlbums();
+//    }
+//
+//    // Method for deleting an album by ID
+//    @DeleteMapping("/album/{albumId}")
+//    public void deleteAlbumById(@PathVariable Long albumId) {
+//        log.info("Deleting album with ID={}", albumId);
+//        musicTrackerService.deleteAlbumById(albumId);
+//    }
 
     //method for inserting a new artist
     @PostMapping("/artist")
