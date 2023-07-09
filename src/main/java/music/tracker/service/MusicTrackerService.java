@@ -99,9 +99,10 @@ public class MusicTrackerService {
         }
         return artist;
     }
-    private Artist findArtistById(Long artistId) {
-        return artistDao.findById(artistId).orElseThrow(() -> new NoSuchElementException(
+    public Artist findArtistById(Long artistId) {
+        Artist artist = artistDao.findById(artistId).orElseThrow(() -> new NoSuchElementException(
                 "Artist with ID=" + artistId + " does not exist."));
+        return artist;
     }
     private void copyArtistFields(Artist artist, ArtistData artistData) {
         artist.setArtistId(artistData.getArtistId());
@@ -125,48 +126,6 @@ public class MusicTrackerService {
     public void deleteArtistById(Long artistId) {
         artistDao.deleteById(artistId);
     }
-
-//    @Transactional(readOnly = false)
-//    public ArtistData saveArtist(ArtistData artistData) {
-//        Long artistId = artistData.getArtistId();
-//        Artist artist = findOrCreateArtist(artistId);
-//
-//        copyArtistFields(artist, artistData);
-//        return new ArtistData(artistDao.save(artist));
-//    }
-//
-//    @Transactional(readOnly = true)
-//    public ArtistData getArtistByArtistId(Long artistId) {
-//        Artist artist = artistDao.findById(artistId).orElseThrow(NoSuchElementException::new);
-//        return new ArtistData(artist);
-//    }
-//
-//    @Transactional(readOnly = true)
-//    public List<ArtistData> getAllArtists() {
-//        List<Artist> artists = artistDao.findAll();
-//        List<ArtistData> artistDatas = new LinkedList<>();
-//        for (Artist artist : artists) {
-//            artistDatas.add(new ArtistData(artist));
-//        }
-//        return artistDatas;
-//    }
-//
-//    @Transactional(readOnly = false)
-//    public void deleteArtistById(Long artistId) {
-//        artistDao.deleteById(artistId);
-//    }
-//
-//    private Artist findOrCreateArtist(Long artistId) {
-//        if (Objects.nonNull(artistId)) {
-//            return artistDao.findById(artistId).orElseThrow(NoSuchElementException::new);
-//        }
-//        return new Artist();
-//    }
-//
-//    private void copyArtistFields(Artist artist, ArtistData artistData) {
-//        artist.setArtistId(artistData.getArtistId());
-//        artist.setArtistName(artistData.getArtistName());
-//    }
 
     @Transactional(readOnly = false)
     public GenreData saveGenre(GenreData genreData) {

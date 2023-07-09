@@ -4,31 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4fe35baa-43d9-4ab3-b8c0-0312bfe52bc8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/music/tracker/MusicTrackerApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/music/tracker/controller/MusicTrackerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/music/tracker/controller/error/GlobalControllerErrorHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/music/tracker/controller/model/AlbumData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/music/tracker/controller/model/ArtistData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/music/tracker/controller/model/GenreData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/music/tracker/controller/model/SongData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/music/tracker/dao/AlbumDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/music/tracker/dao/ArtistDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/music/tracker/dao/GenreDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/music/tracker/dao/SongDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/music/tracker/entity/Album.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/music/tracker/entity/Artist.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/music/tracker/entity/Genre.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/music/tracker/entity/Song.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/music/tracker/service/MusicTrackerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.yaml" afterDir="false" />
+    <list default="true" id="4fe35baa-43d9-4ab3-b8c0-0312bfe52bc8" name="Changes" comment="git commit -m &quot;Early Commit&quot;">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/music/tracker/controller/MusicTrackerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/music/tracker/controller/MusicTrackerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/music/tracker/service/MusicTrackerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/music/tracker/service/MusicTrackerService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,6 +84,18 @@
       <option name="presentableId" value="Default" />
       <updated>1687906593058</updated>
     </task>
+    <task id="LOCAL-00001" summary="git commit -m &quot;Early Commit&quot;">
+      <created>1688845844006</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1688845844006</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="git commit -m &quot;Early Commit&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="git commit -m &quot;Early Commit&quot;" />
   </component>
 </project>

@@ -25,7 +25,7 @@ public class MusicTrackerController {
     @ResponseStatus(code = HttpStatus.CREATED)
     public AlbumData insertAlbum(@RequestBody AlbumData albumData) {
         log.info("Creating album with ID={}", albumData);
-        MusicTrackerService musicTrackerService = new MusicTrackerService();
+//        MusicTrackerService musicTrackerService = new MusicTrackerService();
         return musicTrackerService.saveAlbum(albumData);
     }
 
@@ -34,7 +34,7 @@ public class MusicTrackerController {
     public AlbumData modifyAlbum(@PathVariable Long albumId, @RequestBody AlbumData albumData) {
         albumData.setAlbumId(albumId);
         log.info("Updating album {}", albumData);
-        MusicTrackerService musicTrackerService = new MusicTrackerService();
+//        MusicTrackerService musicTrackerService = new MusicTrackerService();
         return musicTrackerService.saveAlbum(albumData);
     }
 
@@ -42,7 +42,7 @@ public class MusicTrackerController {
     @GetMapping("/album/{albumId}")
     public AlbumData getAlbumByAlbumId(@PathVariable Long albumId) {
         log.info("Getting album with ID={}", albumId);
-        MusicTrackerService musicTrackerService = new MusicTrackerService();
+//        MusicTrackerService musicTrackerService = new MusicTrackerService();
         AlbumData albumData = musicTrackerService.getAlbumByAlbumId(albumId);
         return albumData;
     }
@@ -74,7 +74,7 @@ public class MusicTrackerController {
     public ArtistData modifyArtist(@PathVariable Long artistId, @RequestBody ArtistData artistData) {
         artistData.setArtistId(artistId);
         log.info("Updating artist {}", artistData);
-        MusicTrackerService musicTrackerService = new MusicTrackerService();
+//        MusicTrackerService musicTrackerService = new MusicTrackerService();
         return musicTrackerService.saveArtist(artistData);
     }
 
@@ -82,9 +82,9 @@ public class MusicTrackerController {
     @GetMapping("/artist/{artistId}")
     public ArtistData getArtistByArtistId(@PathVariable Long artistId) {
         log.info("Getting artist with ID={}", artistId);
-        MusicTrackerService musicTrackerService = new MusicTrackerService();
-        ArtistData artistData = musicTrackerService.getArtistByArtistId(artistId);
-        return artistData;
+//        MusicTrackerService musicTrackerService = new MusicTrackerService();
+//        ArtistData artistData = musicTrackerService.getArtistByArtistId(artistId);
+        return musicTrackerService.getArtistByArtistId(artistId);
     }
 
     // Method for getting all artist
@@ -112,14 +112,14 @@ public class MusicTrackerController {
     public GenreData modifyGenre(@PathVariable Long genreId, @RequestBody GenreData genreData) {
         genreData.setGenreId(genreId);
         log.info("Updating genre {}", genreData);
-        MusicTrackerService musicTrackerService = new MusicTrackerService();
+//        MusicTrackerService musicTrackerService = new MusicTrackerService();
         return musicTrackerService.saveGenre(genreData);
     }
 
     @GetMapping("/genre/{genreId}")
     public GenreData getGenreByGenreId(@PathVariable Long genreId) {
         log.info("Getting genre with ID={}", genreId);
-        MusicTrackerService musicTrackerService = new MusicTrackerService();
+//        MusicTrackerService musicTrackerService = new MusicTrackerService();
         GenreData genreData = musicTrackerService.getGenreByGenreId(genreId);
         return genreData;
     }
@@ -147,14 +147,14 @@ public class MusicTrackerController {
     public SongData modifySong(@PathVariable Long songId, @RequestBody SongData songData) {
         songData.setSongId(songId);
         log.info("Updating song {}", songData);
-        MusicTrackerService musicTrackerService = new MusicTrackerService();
+//        MusicTrackerService musicTrackerService = new MusicTrackerService();
         return musicTrackerService.saveSong(songData);
     }
 
     @GetMapping("/song/{songId}")
     public SongData getSongBySongId(@PathVariable Long songId) {
         log.info("Getting song with ID={}", songId);
-        MusicTrackerService musicTrackerService = new MusicTrackerService();
+//        MusicTrackerService musicTrackerService = new MusicTrackerService();
         SongData songData = musicTrackerService.getSongBySongId(songId);
         return songData;
     }
